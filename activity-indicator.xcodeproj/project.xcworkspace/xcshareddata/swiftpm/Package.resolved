@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "activityindicator",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/duyquang91/ActivityIndicator",
+      "state" : {
+        "revision" : "0101a02196f6a67cf26f6434b007d3db6bd07fee",
+        "version" : "1.1.0"
+      }
+    },
+    {
+      "identity" : "skeletonview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Juanpe/SkeletonView",
+      "state" : {
+        "revision" : "7a2cc5d51d5dda6fecca542f1930602cce4a6063",
+        "version" : "1.9.0"
+      }
+    }
+  ],
+  "version" : 2
+}

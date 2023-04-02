@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D0E442C29D9ABE60031380A /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = 8D0E442B29D9ABE60031380A /* SkeletonView */; };
 		8DAD4DCE29D910F900EFE334 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAD4DCD29D910F900EFE334 /* AppDelegate.swift */; };
 		8DAD4DD029D910F900EFE334 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAD4DCF29D910F900EFE334 /* SceneDelegate.swift */; };
 		8DAD4DD229D910F900EFE334 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAD4DD129D910F900EFE334 /* ViewController.swift */; };
 		8DAD4DD529D910F900EFE334 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DAD4DD329D910F900EFE334 /* Main.storyboard */; };
 		8DAD4DD729D910FB00EFE334 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DAD4DD629D910FB00EFE334 /* Assets.xcassets */; };
 		8DAD4DDA29D910FB00EFE334 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DAD4DD829D910FB00EFE334 /* LaunchScreen.storyboard */; };
+		8DAD4DE329D917AE00EFE334 /* ActivityIndicator in Frameworks */ = {isa = PBXBuildFile; productRef = 8DAD4DE229D917AE00EFE334 /* ActivityIndicator */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D0E442C29D9ABE60031380A /* SkeletonView in Frameworks */,
+				8DAD4DE329D917AE00EFE334 /* ActivityIndicator in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +87,10 @@
 			dependencies = (
 			);
 			name = "activity-indicator";
+			packageProductDependencies = (
+				8DAD4DE229D917AE00EFE334 /* ActivityIndicator */,
+				8D0E442B29D9ABE60031380A /* SkeletonView */,
+			);
 			productName = "activity-indicator";
 			productReference = 8DAD4DCA29D910F900EFE334 /* activity-indicator.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,10 @@
 				Base,
 			);
 			mainGroup = 8DAD4DC129D910F900EFE334;
+			packageReferences = (
+				8DAD4DE129D917AE00EFE334 /* XCRemoteSwiftPackageReference "ActivityIndicator" */,
+				8D0E442A29D9ABE60031380A /* XCRemoteSwiftPackageReference "SkeletonView" */,
+			);
 			productRefGroup = 8DAD4DCB29D910F900EFE334 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -356,6 +368,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8D0E442A29D9ABE60031380A /* XCRemoteSwiftPackageReference "SkeletonView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Juanpe/SkeletonView";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.9.0;
+			};
+		};
+		8DAD4DE129D917AE00EFE334 /* XCRemoteSwiftPackageReference "ActivityIndicator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/duyquang91/ActivityIndicator";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8D0E442B29D9ABE60031380A /* SkeletonView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8D0E442A29D9ABE60031380A /* XCRemoteSwiftPackageReference "SkeletonView" */;
+			productName = SkeletonView;
+		};
+		8DAD4DE229D917AE00EFE334 /* ActivityIndicator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8DAD4DE129D917AE00EFE334 /* XCRemoteSwiftPackageReference "ActivityIndicator" */;
+			productName = ActivityIndicator;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8DAD4DC229D910F900EFE334 /* Project object */;
 }
